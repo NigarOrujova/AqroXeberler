@@ -1,0 +1,182 @@
+2023-06-19 14:06:09,069 INFO org.springframework.boot.StartupInfoLogger [main] Starting AgroNewsApplication using Java 18.0.1.1 on kamal with PID 6623 (/home/kamal/Desktop/yelloAd/agro_news/target/classes started by kamal in /home/kamal/Desktop/yelloAd/agro_news)
+2023-06-19 14:06:09,071 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-06-19 14:06:09,072 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+2023-06-19 14:06:09,679 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-19 14:06:09,736 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 49 ms. Found 6 JPA repository interfaces.
+2023-06-19 14:06:10,145 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-06-19 14:06:10,151 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-06-19 14:06:10,151 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-19 14:06:10,218 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-06-19 14:06:10,219 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1106 ms
+2023-06-19 14:06:10,247 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 14:06:10,424 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 14:06:10,432 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2'. Database available at 'jdbc:h2:mem:agro-news'
+2023-06-19 14:06:10,534 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-19 14:06:10,585 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-19 14:06:10,720 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-19 14:06:10,801 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-19 14:06:11,309 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-19 14:06:11,316 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-19 14:06:11,837 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f86f7da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28b4b10e, org.springframework.security.web.context.SecurityContextPersistenceFilter@402c415e, org.springframework.security.web.header.HeaderWriterFilter@1f229c40, org.springframework.web.filter.CorsFilter@2c0d7099, org.springframework.security.web.authentication.logout.LogoutFilter@68fc1e7f, com.yelload.agro_news.security.filter.ExceptionHandlerFilter@74844f8a, com.yelload.agro_news.security.filter.AuthenticationFilter@5c945ee7, com.yelload.agro_news.security.filter.JWTAuthorizationFilter@51a5a8ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f5e64c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f847d9e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16eb93af, org.springframework.security.web.session.SessionManagementFilter@391b03b, org.springframework.security.web.access.ExceptionTranslationFilter@451cef67, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1387bd84]
+2023-06-19 14:06:11,950 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-19 14:06:12,659 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-19 14:06:12,669 INFO org.springframework.boot.StartupInfoLogger [main] Started AgroNewsApplication in 4.023 seconds (JVM running for 4.633)
+2023-06-19 14:06:13,208 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
+java.net.UnknownHostException: www.beti.az
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:299)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:189)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:859)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:829)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:366)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:353)
+	at com.yelload.agro_news.task.ScheduledTasks.getRssFeed(ScheduledTasks.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-19 14:06:15,865 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-19 14:06:15,865 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-06-19 14:06:15,866 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2023-06-19 14:06:15,879 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-2] header == null
+2023-06-19 14:06:15,904 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-2] Exception handler filter worked.
+2023-06-19 14:06:15,947 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-1] header == null
+2023-06-19 14:06:15,951 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-3] header == null
+2023-06-19 14:06:15,951 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-4] header == null
+2023-06-19 14:06:15,951 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-5] header == null
+2023-06-19 14:06:15,951 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-6] header == null
+2023-06-19 14:06:15,960 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-1] Exception handler filter worked.
+2023-06-19 14:06:15,964 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-3] Exception handler filter worked.
+2023-06-19 14:06:15,966 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-5] Exception handler filter worked.
+2023-06-19 14:06:15,980 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-4] Exception handler filter worked.
+2023-06-19 14:06:15,983 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-6] Exception handler filter worked.
+2023-06-19 14:06:16,258 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-7] header == null
+2023-06-19 14:06:16,282 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-7] Exception handler filter worked.
+2023-06-19 14:06:16,310 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-8] header == null
+2023-06-19 14:06:16,988 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-8] Init duration for springdoc-openapi is: 666 ms
+2023-06-19 14:06:17,007 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-8] Exception handler filter worked.
+2023-06-19 14:11:38,533 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-19 14:11:38,546 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-19 14:11:38,659 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-19 14:11:38,667 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-19 14:14:24,794 INFO org.springframework.boot.StartupInfoLogger [main] Starting AgroNewsApplication using Java 18.0.1.1 on kamal with PID 11522 (/home/kamal/Desktop/yelloAd/agro_news/target/classes started by kamal in /home/kamal/Desktop/yelloAd/agro_news)
+2023-06-19 14:14:24,798 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-06-19 14:14:24,799 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "prod"
+2023-06-19 14:14:32,763 INFO org.springframework.boot.StartupInfoLogger [main] Started AgroNewsApplication in 8.426 seconds (JVM running for 9.058)
+2023-06-19 14:14:47,075 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-1] header == null
+2023-06-19 14:14:47,112 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-1] Exception handler filter worked.
+2023-06-19 14:14:47,129 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-2] header == null
+2023-06-19 14:14:47,145 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-2] Exception handler filter worked.
+2023-06-19 14:14:47,147 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-3] header == null
+2023-06-19 14:14:47,148 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-5] header == null
+2023-06-19 14:14:47,148 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-2] header == null
+2023-06-19 14:14:47,148 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-4] header == null
+2023-06-19 14:14:47,151 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-3] Exception handler filter worked.
+2023-06-19 14:14:47,158 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-5] Exception handler filter worked.
+2023-06-19 14:14:47,168 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-2] Exception handler filter worked.
+2023-06-19 14:14:47,189 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-4] Exception handler filter worked.
+2023-06-19 14:14:47,511 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-6] header == null
+2023-06-19 14:14:47,541 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-6] Exception handler filter worked.
+2023-06-19 14:14:47,570 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-7] header == null
+2023-06-19 14:14:48,410 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-7] Exception handler filter worked.
+2023-06-19 14:15:15,662 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-9] header == null
+2023-06-19 14:15:15,710 DEBUG com.yelload.agro_news.controller.NewsController [http-nio-8080-exec-9] Get pageable news => getNewsBySize()
+2023-06-19 14:15:15,712 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Get all news with pageable
+2023-06-19 14:15:20,462 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,462 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,462 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,463 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,464 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,464 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,464 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,464 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,464 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,464 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,465 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,465 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,465 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,465 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,465 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,465 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,465 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,466 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,466 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,466 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,466 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,466 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,466 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,466 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,467 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,467 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,467 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,467 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,467 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,467 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,467 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,468 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,468 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,468 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,468 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,468 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,468 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,469 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,469 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,469 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,469 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,469 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,469 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,469 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,469 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,470 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,470 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,470 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,470 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,470 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,471 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,471 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,471 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,471 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,471 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,471 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,471 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,471 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Convert data from news to newsDto
+2023-06-19 14:15:20,472 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add images to news.getImages()
+2023-06-19 14:15:20,473 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Add tag to news.getTags()
+2023-06-19 14:15:20,473 DEBUG com.yelload.agro_news.service.impl.NewsServiceImpl [http-nio-8080-exec-9] Set images and tags
+2023-06-19 14:15:20,481 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-9] Exception handler filter worked.
