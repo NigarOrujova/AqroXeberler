@@ -33,7 +33,7 @@ public class JournalistService {
 
         String fileName = UUID.randomUUID().toString();
         String fileExtension = "." + FilenameUtils.getExtension(image.getOriginalFilename());
-        String filePath = "C:\\Users\\nigarorucova\\Desktop\\Aqro\\aqroxeber\\src\\main\\java\\com\\yelload\\agro_news\\images\\" + fileName + fileExtension;
+        String filePath = "//var//www//html//agronews//" + fileName + fileExtension;
         Journalist journalist = new Journalist();
         journalist.setTitle(title);
         journalist.setFullname(fullname);
@@ -52,7 +52,7 @@ public class JournalistService {
         try {
             String fileName = UUID.randomUUID().toString();
             String fileExtension = "." + FilenameUtils.getExtension(image.getOriginalFilename());
-            String filePath = "C:\\Users\\nigarorucova\\Desktop\\Aqro\\aqroxeber\\src\\main\\java\\com\\yelload\\agro_news\\images\\" + fileName + fileExtension;
+            String filePath = "//var//www//html//agronews//" + fileName + fileExtension;
             Journalist existingJournalist =journalistRepository.findById(id).get();
             existingJournalist.setTitle(journalist.getTitle());
             existingJournalist.setFullname(journalist.getFullname());

@@ -32,7 +32,7 @@ public class AboutUsService {
 
         String fileName = UUID.randomUUID().toString();
         String fileExtension = "." + FilenameUtils.getExtension(image.getOriginalFilename());
-        String filePath = "C:\\Users\\nigarorucova\\Desktop\\Aqro\\aqroxeber\\src\\main\\java\\com\\yelload\\agro_news\\images\\" + fileName + fileExtension;
+        String filePath = "//var//www//html//agronews//" + fileName + fileExtension;
         AboutUs aboutUs = new AboutUs();
         aboutUs.setTitle(title);
         aboutUs.setDescription(description);
@@ -44,7 +44,6 @@ public class AboutUsService {
             Files.write(Paths.get(filePath), image.getBytes());
             return aboutUsRepository.save(aboutUs);
         } catch (IOException e) {
-            // Hata işleme
             e.printStackTrace();
             return null;
         }
@@ -53,7 +52,7 @@ public class AboutUsService {
         try {
             String fileName = UUID.randomUUID().toString();
             String fileExtension = "." + FilenameUtils.getExtension(image.getOriginalFilename());
-            String filePath = "C:\\Users\\nigarorucova\\Desktop\\Aqro\\aqroxeber\\src\\main\\java\\com\\yelload\\agro_news\\images\\" + fileName + fileExtension;
+            String filePath = "//var//www//html//agronews//" + fileName + fileExtension;
             AboutUs existingAboutUs =aboutUsRepository.findById(id).get();
             existingAboutUs.setTitle(aboutUs.getTitle());
             existingAboutUs.setDescription(aboutUs.getDescription());

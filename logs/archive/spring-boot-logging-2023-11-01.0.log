@@ -1,0 +1,143 @@
+2023-11-01 14:50:45,279 INFO org.springframework.boot.StartupInfoLogger [main] Starting AgroNewsApplication using Java 20.0.2 on Nigar with PID 14084 (C:\Users\nigarorucova\Desktop\aqro\AqroXeberler\target\classes started by nigarorucova in C:\Users\nigarorucova\Desktop\aqro\AqroXeberler)
+2023-11-01 14:50:45,284 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-11-01 14:50:45,285 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+2023-11-01 14:50:46,567 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-01 14:50:46,660 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 83 ms. Found 9 JPA repository interfaces.
+2023-11-01 14:50:47,284 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-01 14:50:47,296 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-01 14:50:47,296 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-11-01 14:50:47,431 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-01 14:50:47,431 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2087 ms
+2023-11-01 14:50:47,459 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-01 14:50:47,706 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-01 14:50:47,716 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2'. Database available at 'jdbc:h2:mem:agro-news'
+2023-11-01 14:50:47,869 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-01 14:50:47,943 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-01 14:50:48,142 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-01 14:50:48,293 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-01 14:50:49,166 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-01 14:50:49,175 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01 14:50:49,977 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8cce9ad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dc5e857, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dc963be, org.springframework.security.web.header.HeaderWriterFilter@956cf3d, org.springframework.web.filter.CorsFilter@5ce0f50a, org.springframework.security.web.authentication.logout.LogoutFilter@6f30d0eb, com.yelload.agro_news.security.filter.ExceptionHandlerFilter@c3a1d7f, com.yelload.agro_news.security.filter.AuthenticationFilter@63541cd4, com.yelload.agro_news.security.filter.JWTAuthorizationFilter@2111d7b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f9999f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e085259, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a023e34, org.springframework.security.web.session.SessionManagementFilter@58189132, org.springframework.security.web.access.ExceptionTranslationFilter@6ce8bf64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35975b05]
+2023-11-01 14:50:50,121 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-01 14:50:51,114 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-01 14:50:51,127 INFO org.springframework.boot.StartupInfoLogger [main] Started AgroNewsApplication in 6.411 seconds (JVM running for 7.335)
+2023-11-01 14:50:52,887 DEBUG com.yelload.agro_news.rss.NewsDataHelper [scheduling-1] The Mineral gübrələrin səyyar satış xidməti başlayıb news is new
+2023-11-01 14:50:52,889 DEBUG com.yelload.agro_news.rss.NewsDataHelper [scheduling-1] News content length checked.
+2023-11-01 14:50:52,890 DEBUG com.yelload.agro_news.rss.NewsDataHelper [scheduling-1] Get standard month format
+2023-11-01 14:50:52,890 DEBUG com.yelload.agro_news.rss.NewsDataHelper [scheduling-1] Get standard date and change month format
+2023-11-01 14:50:52,891 DEBUG com.yelload.agro_news.rss.NewsDataControl [scheduling-1] getAgroGovAzNews() - image list created
+2023-11-01 14:50:52,925 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
+java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\nigarorucova\Desktop\Aqro\aqroxeber\src\main\java\com\yelload\agro_news\images\image1698835852923.jpg (The system cannot find the path specified)
+	at com.yelload.agro_news.rss.NewsDataControl.lambda$getAgroGovAzNews$0(NewsDataControl.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.yelload.agro_news.rss.NewsDataControl.getAgroGovAzNews(NewsDataControl.java:70)
+	at com.yelload.agro_news.task.ScheduledTasks.getRssFeed(ScheduledTasks.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.io.FileNotFoundException: C:\Users\nigarorucova\Desktop\Aqro\aqroxeber\src\main\java\com\yelload\agro_news\images\image1698835852923.jpg (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+	at com.yelload.agro_news.rss.NewsDataControl.lambda$getAgroGovAzNews$0(NewsDataControl.java:84)
+	... 13 common frames omitted
+2023-11-01 14:51:29,360 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01 14:51:29,361 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-11-01 14:51:29,549 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-01 14:51:29,552 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-01 14:51:37,396 INFO org.springframework.boot.StartupInfoLogger [main] Starting AgroNewsApplication using Java 20.0.2 on Nigar with PID 13008 (C:\Users\nigarorucova\Desktop\aqro\AqroXeberler\target\classes started by nigarorucova in C:\Users\nigarorucova\Desktop\aqro\AqroXeberler)
+2023-11-01 14:51:37,398 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-11-01 14:51:37,399 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+2023-11-01 14:51:38,114 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-01 14:51:38,200 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 77 ms. Found 9 JPA repository interfaces.
+2023-11-01 14:51:38,724 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-01 14:51:38,732 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-01 14:51:38,733 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-11-01 14:51:38,856 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-01 14:51:38,856 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1413 ms
+2023-11-01 14:51:38,887 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-01 14:51:39,103 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-01 14:51:39,114 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2'. Database available at 'jdbc:h2:mem:agro-news'
+2023-11-01 14:51:39,246 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-01 14:51:39,292 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-01 14:51:39,438 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-01 14:51:39,546 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-01 14:51:40,377 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-01 14:51:40,386 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01 14:51:41,107 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8cce9ad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dc5e857, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dc963be, org.springframework.security.web.header.HeaderWriterFilter@956cf3d, org.springframework.web.filter.CorsFilter@5ce0f50a, org.springframework.security.web.authentication.logout.LogoutFilter@6f30d0eb, com.yelload.agro_news.security.filter.ExceptionHandlerFilter@c3a1d7f, com.yelload.agro_news.security.filter.AuthenticationFilter@63541cd4, com.yelload.agro_news.security.filter.JWTAuthorizationFilter@2111d7b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f9999f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e085259, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a023e34, org.springframework.security.web.session.SessionManagementFilter@58189132, org.springframework.security.web.access.ExceptionTranslationFilter@6ce8bf64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35975b05]
+2023-11-01 14:51:41,239 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-01 14:51:42,176 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-01 14:51:42,189 INFO org.springframework.boot.StartupInfoLogger [main] Started AgroNewsApplication in 5.27 seconds (JVM running for 6.001)
+2023-11-01 14:52:09,287 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01 14:52:09,288 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-11-01 14:52:09,473 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-01 14:52:09,476 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-01 14:52:11,890 INFO org.springframework.boot.StartupInfoLogger [main] Starting AgroNewsApplication using Java 20.0.2 on Nigar with PID 15316 (C:\Users\nigarorucova\Desktop\aqro\AqroXeberler\target\classes started by nigarorucova in C:\Users\nigarorucova\Desktop\aqro\AqroXeberler)
+2023-11-01 14:52:11,893 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-11-01 14:52:11,894 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+2023-11-01 14:52:12,598 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-01 14:52:12,678 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 73 ms. Found 9 JPA repository interfaces.
+2023-11-01 14:52:13,181 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-01 14:52:13,190 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-01 14:52:13,190 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-11-01 14:52:13,314 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-01 14:52:13,314 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1375 ms
+2023-11-01 14:52:13,341 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-01 14:52:13,539 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-01 14:52:13,550 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2'. Database available at 'jdbc:h2:mem:agro-news'
+2023-11-01 14:52:13,673 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-01 14:52:13,717 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-01 14:52:13,862 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-01 14:52:13,972 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-01 14:52:14,761 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-01 14:52:14,770 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01 14:52:15,532 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a225014, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d836c4a, org.springframework.security.web.context.SecurityContextPersistenceFilter@13e6c544, org.springframework.security.web.header.HeaderWriterFilter@21539796, org.springframework.web.filter.CorsFilter@485547ac, org.springframework.security.web.authentication.logout.LogoutFilter@4c678a1f, com.yelload.agro_news.security.filter.ExceptionHandlerFilter@6d77d269, com.yelload.agro_news.security.filter.AuthenticationFilter@350d9d23, com.yelload.agro_news.security.filter.JWTAuthorizationFilter@530a46f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b3b2290, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47d7e4b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3180131e, org.springframework.security.web.session.SessionManagementFilter@69d2c460, org.springframework.security.web.access.ExceptionTranslationFilter@32eb38e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3eb8057c]
+2023-11-01 14:52:15,694 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-01 14:52:16,708 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-01 14:52:16,721 INFO org.springframework.boot.StartupInfoLogger [main] Started AgroNewsApplication in 5.267 seconds (JVM running for 6.097)
+2023-11-01 14:52:32,550 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-01 14:52:32,550 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-11-01 14:52:32,550 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-11-01 14:52:32,568 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-1] header == null
+2023-11-01 14:52:32,601 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-1] Exception handler filter worked.
+2023-11-01 14:52:32,628 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-2] header == null
+2023-11-01 14:52:32,638 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-2] Exception handler filter worked.
+2023-11-01 14:52:32,639 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-3] header == null
+2023-11-01 14:52:32,639 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-4] header == null
+2023-11-01 14:52:32,639 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-5] header == null
+2023-11-01 14:52:32,640 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-2] header == null
+2023-11-01 14:52:32,647 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-3] Exception handler filter worked.
+2023-11-01 14:52:32,665 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-4] Exception handler filter worked.
+2023-11-01 14:52:32,672 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-2] Exception handler filter worked.
+2023-11-01 14:52:32,688 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-5] Exception handler filter worked.
+2023-11-01 14:52:32,852 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-6] header == null
+2023-11-01 14:52:32,875 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-6] Exception handler filter worked.
+2023-11-01 14:52:32,900 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-7] header == null
+2023-11-01 14:52:33,516 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-7] Init duration for springdoc-openapi is: 605 ms
+2023-11-01 14:52:33,533 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-7] Exception handler filter worked.
+2023-11-01 17:54:41,128 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-4] header == null
+2023-11-01 17:54:41,147 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-4] Exception handler filter worked.
+2023-11-01 17:54:41,159 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-2] header == null
+2023-11-01 17:54:41,161 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-5] header == null
+2023-11-01 17:54:41,161 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-6] header == null
+2023-11-01 17:54:41,161 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-7] header == null
+2023-11-01 17:54:41,161 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-3] header == null
+2023-11-01 17:54:41,163 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-5] Exception handler filter worked.
+2023-11-01 17:54:41,163 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-3] Exception handler filter worked.
+2023-11-01 17:54:41,163 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-2] Exception handler filter worked.
+2023-11-01 17:54:41,163 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-7] Exception handler filter worked.
+2023-11-01 17:54:41,180 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-6] Exception handler filter worked.
+2023-11-01 17:54:41,372 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-8] header == null
+2023-11-01 17:54:41,374 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-10] header == null
+2023-11-01 17:54:41,375 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-8] Exception handler filter worked.
+2023-11-01 17:54:41,378 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-10] Exception handler filter worked.
+2023-11-01 17:54:41,400 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8080-exec-1] header == null
+2023-11-01 17:54:41,408 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8080-exec-1] Exception handler filter worked.

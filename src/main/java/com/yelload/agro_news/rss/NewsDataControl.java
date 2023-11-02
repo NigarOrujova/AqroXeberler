@@ -79,7 +79,7 @@ public class NewsDataControl {
                         url = new URL("https://agro.gov.az" + img.select("img").attr("src"));
                         InputStream is = url.openStream();
 
-                        String newUrl = "C:\\Users\\nigarorucova\\Desktop\\Aqro\\aqroxeber\\src\\main\\java\\com\\yelload\\agro_news\\images\\" + "image" + System.currentTimeMillis() + ".jpg";
+                        String newUrl = "//var//www//html//agronews//" + "image" + System.currentTimeMillis() + ".jpg";
                         System.out.println(newUrl);
                         OutputStream os = new FileOutputStream(newUrl);
 

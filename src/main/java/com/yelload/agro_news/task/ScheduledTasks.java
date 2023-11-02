@@ -27,8 +27,8 @@ public class ScheduledTasks {
 
 //        Long start = System.currentTimeMillis();
 
-       newsDataControl.getAgroGovAzNews(Jsoup.connect("https://agro.gov.az/az/news").get());
-      log.info("The getAgroGovAzNews() method worked...");
+       //newsDataControl.getAgroGovAzNews(Jsoup.connect("https://agro.gov.az/az/news").get());
+      //log.info("The getAgroGovAzNews() method worked...");
 //        newsDataControl.getAtmGovAzNews(Jsoup.connect("https://atm.gov.az/az/menu/21/xeberler/").get());
 //        log.info("The getAtmGovAzNews() method worked...");
 //        newsDataControl.getAdauGovAzNews(Jsoup.connect("http://www.adau.edu.az/xeberler/").get());

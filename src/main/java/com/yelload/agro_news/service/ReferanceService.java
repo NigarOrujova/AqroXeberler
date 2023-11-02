@@ -30,7 +30,7 @@ public class ReferanceService {
 
         String fileName = UUID.randomUUID().toString();
         String fileExtension = "." + FilenameUtils.getExtension(image.getOriginalFilename());
-        String filePath = "C:\\Users\\nigarorucova\\Desktop\\Aqro\\aqroxeber\\src\\main\\java\\com\\yelload\\agro_news\\images\\" + fileName + fileExtension;
+        String filePath = "//var//www//html//agronews//" + fileName + fileExtension;
         Referance referance = new Referance();
         referance.setImageData(image.getBytes());
         referance.setName(fileName);
@@ -47,7 +47,7 @@ public class ReferanceService {
         try {
             String fileName = UUID.randomUUID().toString();
             String fileExtension = "." + FilenameUtils.getExtension(image.getOriginalFilename());
-            String filePath = "C:\\Users\\nigarorucova\\Desktop\\Aqro\\aqroxeber\\src\\main\\java\\com\\yelload\\agro_news\\images\\" + fileName + fileExtension;
+            String filePath = "//var//www//html//agronews//" + fileName + fileExtension;
             Referance existingReferance =referanceRepository.findById(id).get();
             existingReferance.setImageData(image.getBytes());
             existingReferance.setName(fileName);
