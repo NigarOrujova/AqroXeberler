@@ -26,3 +26,25 @@
 2023-11-02 14:34:10,837 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2023-11-02 14:34:11,008 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2023-11-02 14:34:11,008 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-01 15:59:49,170 INFO org.springframework.boot.StartupInfoLogger [main] Starting AgroNewsApplication using Java 20.0.2 on Nigar with PID 1400 (C:\Users\nigarorucova\Desktop\AqroXeberler\target\classes started by nigarorucova in C:\Users\nigarorucova\Desktop\AqroXeberler)
+2023-12-01 15:59:49,173 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-12-01 15:59:49,174 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "prod"
+2023-12-01 15:59:57,812 INFO org.springframework.boot.StartupInfoLogger [main] Started AgroNewsApplication in 9.448 seconds (JVM running for 10.848)
+2023-12-01 16:03:45,608 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-1] header == null
+2023-12-01 16:03:45,645 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-1] Exception handler filter worked.
+2023-12-01 16:03:45,663 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-2] header == null
+2023-12-01 16:03:45,672 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-2] Exception handler filter worked.
+2023-12-01 16:03:45,675 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-3] header == null
+2023-12-01 16:03:45,675 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-4] header == null
+2023-12-01 16:03:45,676 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-5] header == null
+2023-12-01 16:03:45,675 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-2] header == null
+2023-12-01 16:03:45,682 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-3] Exception handler filter worked.
+2023-12-01 16:03:45,692 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-4] Exception handler filter worked.
+2023-12-01 16:03:45,703 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-2] Exception handler filter worked.
+2023-12-01 16:03:45,717 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-5] Exception handler filter worked.
+2023-12-01 16:03:45,876 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-7] header == null
+2023-12-01 16:03:45,881 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-6] header == null
+2023-12-01 16:03:45,885 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-6] Exception handler filter worked.
+2023-12-01 16:03:45,901 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-7] Exception handler filter worked.
+2023-12-01 16:03:45,923 DEBUG com.yelload.agro_news.security.filter.JWTAuthorizationFilter [http-nio-8086-exec-8] header == null
+2023-12-01 16:03:46,644 DEBUG com.yelload.agro_news.security.filter.ExceptionHandlerFilter [http-nio-8086-exec-8] Exception handler filter worked.
